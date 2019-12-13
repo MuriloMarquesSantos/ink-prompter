@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+	<title>Inktober Generator</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+	  <a class="navbar-brand" href="#">Theme Generator</a>
+	</nav>
+
+	<main role="main" class="container">
+	  <div class="jumbotron">
+	    <h1>Inktober theme generator</h1>
+	    <p class="lead">Click here to receive a random theme!!</p>
+	    <form class="form-inline" action="/generateWorldThemes" method='post'>
+	    	<button type="submit" role="button" class="btn btn-lg btn-primary world-btn">World Building</button>
+	    </form>
+	    <form class="form-inline" action="/generateInkitoberThemes" method='post'>
+	    	<button type="submit" role="button" class="btn btn-lg btn-primary ink-btn">Inkitober</button>
+	    </form>
+	    <form class="form-inline" action="/generateMedievalThemes" method='post'>
+	    	<button type="submit" role="button" class="btn btn-lg btn-primary med-btn">Medieval</button>
+	    </form>
+	  </div>
+	</main>
+</body>
+</html>
