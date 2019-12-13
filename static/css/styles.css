@@ -25,3 +25,8 @@ h2{
 .med-btn {
 	background-color: #c0392b;
 }
+
+.btn:hover {
+	background-color: #ecf0f1;
+	color: #34495e;
+}
