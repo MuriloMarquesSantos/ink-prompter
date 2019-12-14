@@ -42,7 +42,7 @@ def FUN_generateWorld():
     "Astral Plains/ Dreamland"
   ]
 
-  return render_template("index2.html", theme=random.choice(themes))
+  return render_template("themes.html", theme=random.choice(themes))
 
 @app.route("/generateInkitoberThemes", methods = ['POST'])
 def FUN_InkitoberThemes():
@@ -50,7 +50,7 @@ def FUN_InkitoberThemes():
      "POISONOUS","CRUEL","DRAIN","TRANQUIL","WHALE","EXPENSIVE","ROASTED","GUARDED","MUDDY","SPELL","CLOCK","CHOP","CHICKEN","WEAK","PRICKLY","DROOLING","ANGULAR","STRETCH","EXHAUSTED","SWOLLEN","THUNDER","STAR","BOTTLE","GIFT","PRECIOUS","SCORCHED","DOUBLE","FLOWING","BREAKABLE","JOLT","SLICE"
   ]
 
-  return render_template("index2.html", theme=random.choice(themes))
+  return render_template("themes.html", theme=random.choice(themes))
 
 @app.route("/generateMedievalThemes", methods = ['POST'])
 def FUN_MedievalThemes():
@@ -58,7 +58,7 @@ def FUN_MedievalThemes():
      "THE KNIGHT OF LIGHT","THE TIME TRAVELLER","THE KNIGHT OF SHADOWS","THE UNDEAD SORCERER","THE WARRIOR PRINCESS","THE OLD DRAGON","THE RIVER MAIDEN","THE ORC GENERAL","THE FARMER'S DAUGHTER","THE GOOD ORC","THE THIEF","THE WICKED FAE","THE SMITHIE'S SON","THE SHAPESHIFTING GIRL","THE DRUNKEN WARRIOR","THE GIANTESS","THE LADY OF THE BLADES","THE WARRIOR'S DAUGHTER","THE THREE WITCHES","THE PALADIN","THE WIZARD KING","THE STRONGMAN","THE DRAGON QUEEN","THE WANDERING ASSASSIN","THE CHILD MAGE","THE DRUNKEN FISTFIGHTER","THE OLD WIZARD","THE SAMURAI","THE BARBARIAN HERO","THE FIGHTING FRIAR","THE BARBARIAN HEROINE"
   ]
 
-  return render_template("index2.html", theme=random.choice(themes))
+  return render_template("themes.html", theme=random.choice(themes))
 
 if __name__ == "__main__":
   app.run()
